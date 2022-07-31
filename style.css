@@ -1,0 +1,129 @@
+:root{
+    --green-color:#00ff00;
+    --white-color:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height:100%;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0);
+    height: fit-content;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+nav{
+    width: 80%;
+    margin: auto;
+}
+
+.heading{
+    font-family: 'Rubik', sans-serif;;
+    font-size: 100px;
+}
+
+.desktop{
+    background: url(Cover.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 100vh;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    height: 50vh;
+}
+
+p{
+    max-width: 60%;
+    font-size: 20px;
+    text-align: center;
+    overflow:auto;
+}
+
+.wrapper{
+    width:fit-content;
+    background-color: var(--white-color);
+    margin: auto;
+    height: max-content;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: var(--green-color);
+    font-size:x-large;
+    font-weight: 600;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    border:none;
+}
+
+@media (max-width:760px) {
+    nav ul{
+        flex-direction: column;
+        background-color: black;
+    }
+    nav ul li a{
+        color: var(--white-color);
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul li{
+        margin-top: 3px;
+    }
+
+    .heading{
+        font-size: 60px;
+    }
+    
+}
+
+@media (max-width:370px) {
+    p{
+        display: none;
+    }
+    .heading{
+        font-size: 50px;
+    }
+}
